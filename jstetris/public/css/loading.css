@@ -1,0 +1,76 @@
+@font-face{
+    font-family: 'aerial';
+    src: url('../fonts/aerial.ttf') format('truetype');
+}
+.loading_wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 100;
+}
+.loading_box{
+    position: absolute;
+    left: calc(50vw - 100px);
+    top: calc(50vh - 100px);
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #000;
+}
+.line{
+    width: 200px;
+    height: 20px;
+    background: linear-gradient(to left ,rgba(255,255,255,1), rgba(255,255,255,0) 50%, rgba(255,255,255,0) );
+    animation: anim_loading 1s linear 0.1s infinite; 
+    transform: translateX(-100px);
+    display: none;
+}
+.line_box{
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 200px;
+    height: 20px;
+    transform-origin:50% 50%;
+    overflow: hidden;
+}
+.loading_text{
+    position: absolute;
+    left: calc(50vw - 100px);
+    top: calc(50vh + 150px);
+    width: 200px;
+    text-align: center;
+    font-family: 'aerial';
+    font-size: 20px;
+    color: #FFF;
+}
+.loading_text_cover{
+    position: absolute;
+    left: calc(50vw - 100px);
+    top: calc(50vh + 150px);
+    width: 200px;
+    height: 20px;
+    background: linear-gradient(to left ,rgba(0,0,0,0), rgba(0,0,0,.7) 50%,rgba(0,0,0,0) );
+    z-index: 102;
+    animation: anim_loading_text 1s ease infinite;
+}
+
+@keyframes anim_loading{
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(200px);
+    }
+}
+@keyframes anim_loading_text{
+    0%{
+        transform:translateX(-150px)
+    }
+    100%{
+        transform:translateX(150px)
+    }
+}

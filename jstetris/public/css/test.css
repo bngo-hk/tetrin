@@ -1,0 +1,133 @@
+@font-face{
+    font-family: 'aerial';
+    src: url('../fonts/aerial.ttf') format('truetype');
+}
+body{
+
+    background-color:#000;
+}
+.wrap{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+ 
+}
+@media screen and (max-width: 1300px)
+{
+    .wrap{
+
+    }
+    
+}
+.common_area{
+    position: relative;
+    margin: calc(50vh - 350px) calc(50vw - 400px);
+    width: 800px;
+    height: 700px;
+
+    overflow: hidden;
+}
+
+.hold_area{
+    position: absolute;
+    left: 145px;
+    top: 49px;
+    width: 105px;
+    height: 120px;
+    background: rgba(20,20,20,.6);
+}
+.hold_box,.next_box{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+
+}
+.hold_text{
+    width: 100px;
+    height:20px;
+}
+.next_area{
+    position: absolute;
+    left: 556px;
+    top: 49px;
+    width: 100px;
+    height: 120px;
+    background: rgba(20,20,20,.6);
+}
+
+.score_area{
+    position: absolute;
+    left: 556px;
+    top: 445px;
+
+    width: 105px;
+    height: 200px;
+    padding: 0;
+    
+    background: rgba(20,20,20,.6);
+}
+.score_text{
+    width: 80px;
+    height: 25px;
+    margin: 8px auto 12px;
+}
+.score_view{
+    width: 100px;
+    height: 22px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 10px auto 30px;
+    font-size: 20px;
+    color: #333;
+    font-family: 'aerial';
+    transform:scaleX(0.8);
+}
+
+
+.pg_top{
+    position: absolute;
+    left: 250px;
+    top: 50px;
+
+    width: 300px;
+    height: 600px;
+    background-color: #088;
+    opacity: 0;
+}
+.button_start{
+    width: 100px;
+    height: 40px;
+    background-color: #00D;
+}
+.button_howto{
+    width: 100px;
+    height: 40px;
+    background-color: #0D0;
+}
+.pg_game{
+    position: absolute;
+    left: 244px;
+    top: 50px;
+    
+    width: 300px;
+    height: 600px;
+    background-color: rgba(0,0,0,.85);
+    border: double 6px rgb(52,252, 252);
+    
+    border-radius: 3px;
+}
+.field{
+    width: 0px;
+    height: 0px;
+    background-color: #333;
+}
+
+.pg_howto{
+    position: fixed;
+    left: calc(50vw - 300px);
+    top: calc(50vh - 200px);
+    width: 600px;
+    height: 400px;
+    opacity: 0;
+    background-color: rgba(220,220,220,.7);
+}
