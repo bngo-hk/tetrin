@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf8"/>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/loading.css"/>
+        <link rel="preload" href="./fonts/aerial.ttf" as="font"/>
+        <link rel="preload" href="./js/loading.js" as="script"/>
+        <link rel="preload" href="css/loading.css" as="style"/>
+        <script src='./js/index.js' defer></script>
+        <script src='./js/loading.js' defer></script>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <meta name="description" content="Javascriptでテトリスっぽいゲームを作ってみました">
+        <meta name="keywords" content="ITkusodokata,TETRIN,Javascript">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@ITkusodokata">
+        <meta name="twitter:title" content="TETRIN">
+        <meta name="twitter:description" content="Javascriptでテトリスっぽいゲーム">
+        <meta name="twitter:image" content="https://bngo-hk.web.app/images/twittercard.png">
+        <title>TETRIN</title>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="common_area">
+                <div class="hold_area">
+                    <p class="hold_text"></p>
+                    <div class="hold_box">
+                            
+                    </div>
+                </div>
+                <div class="next_area">
+                    <p class="hold_text"></p>
+                    <div class="next_box"></div>
+                    <div class="next_box2"></div>
+                    <div class="next_box2"></div>
+                </div>
+                <div class="number_area">
+                    <p class="number_text"></p>
+                    <p class="number_view level_view">1</p>
+                    <p class="number_text"></p>
+                    <p class="number_view line_view">0</p>
+                </div>
+                <div class="score_area">
+                    <p class="number_text"></p>
+                    <p class="number_view score_view">0</p>
+                </div>
+
+
+                <div class="pg_top">
+                    <h1>TETRIN</h1>
+                    <div class="button_box">
+                        <button class="button_start">START</button>
+                        <button class="button_howto">HOWTO</button>
+                    </div>
+                    <div class="button_oni_text">
+                        <button class="button_oni"><div class="button_oni_text">ONICHIKU START</div></button>
+                    </div>
+                    <div class="button_box">
+                        <button class="button_bgm bgmOn">BGM<br/>ON</button>
+                        <button class="button_se seOn">SE<br/>ON</button>
+                    </div>
+                    <div class="button_box">
+                        <button class="button_credit">credit</button>
+                    </div>
+                </div>
+
+                <div class="pg_game">
+                    <div class="field">
+                        
+                    </div>
+                </div>
+                <div class="pg_gov">
+                    <p>GAME<br>OVER</p>
+                    <div class="button_box">
+                        <button class="button_restart">TRY AGAIN?</button><button class="button_howto">HOWTO</button>
+                    </div>
+                </div>
+
+                <div class="pg_clear">
+                    <p>CLEAR!</p>
+                    <small>CONGRATULATIONS!!</small>
+                    
+                    <div class="clear_ef clear_ef1"></div>
+                    <div class="clear_ef clear_ef2"></div>
+                    <div class="clear_ef clear_ef3"></div>
+                    <div class="clear_ef clear_ef4"></div>
+                </div>
+
+                <div class="pg_result">
+                    <h2>RESULT</h2>
+                    <table>
+                        <tr>
+                            <th class="tablecells th">SCORE</th>
+                        </tr>
+                        <tr>
+                            <td class="tablecells td">----</td>
+                        </tr>
+                        <tr>
+                            <th class="tablecells th">TIME</th>
+                        </tr>
+                        <tr>
+                            <td class="tablecells td">--m --s --</td>
+                        </tr>
+                        <tr>
+                            <th class="tablecells th">RANK</th>
+                        </tr>
+                        <tr>
+                            <td class="tablecells td">----</td>
+                        </tr>
+                    </table>
+
+                    <div class="button_box">
+                        <div class="tweet_box">
+                        
+                            <button class="button_toTop">TOP</button>
+                            <button class="button_tweet"><a href="http://twitter.com/share?text=%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%81%AF%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AF%E3%81%9A%E3%81%A0%E3%82%88&url=https://bngo-hk.web.app&lang=Japanese&count=none&hashtags=TETRIN"  target="_blank" rel="noopener noreferrer" class="twitter_a"></a></button>
+                        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="pg_howto">
+                    
+            </div>
+            <div class="pg_credit">
+                    <h2>使用素材</h2>
+                    <h3>SE</h3>
+                        <p>OtoLogic <a href="https://otologic.jp/">https://otologic.jp/</a></p>
+                        <p>ポケットサウンド/効果音素材<a href="https://pocket-se.info/">https://pocket-se.info/</a></p>
+                        <p>DOVA-SYNDROME<a href="https://dova-s.jp/">https://dova-s.jp/</a></p>
+                    <h3>BGM</h3>
+                        <p>Twenty Lolitas　　-作曲 ISAo<br/><a href="https://dova-s.jp/">https://dova-s.jp/bgm/play11456.html</a></p>
+                        <p class="credit_oni">この楽園に愛は要らない　-編曲 弐ヶのん<br/>
+                            (原曲 エレクトリックヘリテージ - 作曲 ZUN)
+                        </p>
+            </div>
+        </div>
+        
+        <div class="loading_wrap">
+            <div class="loading_box">
+                <div class="line_box"><div class="line"></div></div>
+                <div class="line_box"><div class="line"></div></div>
+                <div class="line_box"><div class="line"></div></div>
+                <div class="line_box"><div class="line"></div></div>
+                <div class="line_box"><div class="line"></div></div>
+                <div class="line_box"><div class="line"></div></div>
+                <div class="line_box"><div class="line"></div></div>
+                <div class="line_box"><div class="line"></div></div>
+            </div>
+            <div class="loading_text">LOADING...</div>
+            <div class="loading_text_cover"></div>
+        </div>
+    </body>
+</html>
